@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>B. Vishnu — Developer & Builder</title>
+<style>
+:root{--bg:#fff;--t:#f5f5f7;--fg:#1d1d1f;--m:#6e6e73;--ln:#d2d2d7;--ac:#0066cc;--k:#000;--kf:#f5f5f7;--km:#86868b;--kt:#161617;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--t:#161617;--fg:#f5f5f7;--m:#a1a1a6;--ln:#333336;--ac:#2997ff;--kt:#1d1d1f}}
+:root[data-theme="dark"]{--bg:#000;--t:#161617;--fg:#f5f5f7;--m:#a1a1a6;--ln:#333336;--ac:#2997ff;--kt:#1d1d1f}
+html{scroll-behavior:smooth;scroll-padding-top:100px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;letter-spacing:-.01em;line-height:1.47}
+a{color:inherit;text-decoration:none}
+.gn{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc(50% - 512px));background:rgba(22,22,23,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);font-size:12px;color:#f5f5f7}
+.gn a{opacity:.8;transition:.2s}.gn a:hover{opacity:1}.gn .c{display:flex;gap:min(4vw,34px)}.gn b{font-size:17px;font-weight:600;opacity:1}
+@media(max-width:640px){.gn .c{display:none}}
+.sn{position:sticky;top:calc(44px + env(safe-area-inset-top,0px));z-index:19;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 max(22px,calc(50% - 512px));background:rgba(29,29,31,.85);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);color:#f5f5f7;font-size:12px;border-bottom:1px solid #333}
+.sn b{font-size:21px;font-weight:600}.sn .r{display:flex;gap:22px;align-items:center}.sn .r a{opacity:.75}
+.pill{background:#0071e3;color:#fff!important;opacity:1!important;padding:5px 12px;border-radius:980px;font-size:12px}
+.w{max-width:1024px;margin:0 auto;padding:0 22px}
+.hero{text-align:center;padding:90px 22px 0;background:var(--t);overflow:hidden}
+.eb{font-size:21px;font-weight:600;color:var(--fg);margin:0 0 6px}
+h1{font-size:clamp(44px,9vw,88px);line-height:1.05;letter-spacing:-.03em;font-weight:600;margin:0}
+h2{font-size:clamp(32px,5.5vw,56px);line-height:1.08;letter-spacing:-.025em;font-weight:600;margin:0}
+h3{font-size:28px;line-height:1.14;letter-spacing:-.015em;font-weight:600;margin:0 0 6px}
+.sub{font-size:clamp(19px,2.6vw,28px);line-height:1.2;color:var(--fg);margin:14px auto 0;max-width:720px;font-weight:0}
+.lk{color:var(--ac);font-size:19px;margin:0 12px;display:inline-block;margin-top:18px}.lk:after{content:" ›"}.lk:hover{text-decoration:underline}
+.grad{background:linear-gradient(90deg,#2997ff,#bf5af2 50%,#ff375f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.orb{margin:60px auto 0;width:min(560px,90vw);height:300px;border-radius:300px 300px 0 0;background:radial-gradient(circle at 50% 100%,#2997ff,#5e5ce6 45%,#bf5af2 70%,transparent 72%);filter:blur(1px);position:relative}
+.orb:after{content:"B. Vishnu";position:absolute;inset:auto 0 46px;text-align:center;color:#fff;font-size:34px;font-weight:600;letter-spacing:-.02em}
+.meta{font-size:14px;color:var(--m);margin-top:22px}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));text-align:center;padding:70px 22px 40px;gap:26px}
+.st b{display:block;font-size:40px;letter-spacing:-.03em;font-weight:600}.st span{color:var(--m);font-size:14px}
+.tile{border-radius:28px;background:var(--t);text-align:center;padding:52px 30px 0;overflow:hidden;display:flex;flex-direction:column;min-height:440px}
+.tile.k{background:var(--kt);color:var(--kf)}.tile.k .m,.tile.k p{color:var(--km)}
+.tile p{color:var(--m);font-size:19px;margin:6px 0 0}.tile .lks{margin-bottom:20px}
+.tile .vis{margin:auto -30px 0;height:170px;border-radius:26px 26px 0 0;display:grid;place-items:center;font-size:30px;font-weight:600;color:#fff;letter-spacing:-.02em}
+.g1{background:linear-gradient(135deg,#0a84ff,#5e5ce6)}.g2{background:linear-gradient(135deg,#30d158,#0a84ff)}.g3{background:linear-gradient(135deg,#ff9f0a,#ff375f)}.g4{background:linear-gradient(135deg,#bf5af2,#ff375f)}
+.bento{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.bento .wide{grid-column:span 2}
+.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:14px 0 0}.tags span{font-size:12px;padding:4px 12px;border-radius:980px;border:1px solid #424245;color:#a1a1a6}
+.t2 .tags span{border-color:var(--ln);color:var(--m)}
+.blk{background:var(--k);color:var(--kf);padding:110px 0}.blk .sub{color:var(--kf)}.blk .mm{color:var(--km)}
+.sec{padding:110px 0 0}.sec>.w>h2{text-align:center}
+.tl{max-width:680px;margin:56px auto 0}
+.tl div{padding:26px 0;border-top:1px solid var(--ln);display:grid;grid-template-columns:130px 1fr;gap:14px}
+.tl small{color:var(--m);font-size:14px;padding-top:6px}.tl h3{font-size:24px}.tl p{margin:2px 0 0;color:var(--m);font-size:17px}
+.hs{display:flex;gap:16px;overflow-x:auto;padding:50px max(22px,calc(50% - 512px)) 30px;scroll-snap-type:x mandatory;scrollbar-width:none}.hs::-webkit-scrollbar{display:none}
+.hs .c{flex:0 0 min(320px,80vw);min-height:380px;border-radius:28px;background:var(--t);padding:32px;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:space-between}
+.hs .c small{font-size:14px;font-weight:600;color:var(--m);text-transform:uppercase;letter-spacing:.04em}.hs .c p{font-size:17px;color:var(--m);margin:8px 0 0}
+.hs .c.k{background:var(--kt);color:var(--kf)}.hs .c.k p,.hs .c.k small{color:var(--km)}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:50px}
+.sk div{background:var(--t);border-radius:22px;padding:28px}.sk h4{margin:0 0 12px;font-size:14px;color:var(--m);font-weight:600}.sk span{display:inline-block;margin:0 6px 8px 0;font-size:15px;font-weight:500}
+.sk span:not(:last-child):after{content:" ·";color:var(--m)}
+.foot{background:var(--t);margin-top:110px;padding:20px 0 40px;font-size:12px;color:var(--m)}
+.foot .w>p{border-bottom:1px solid var(--ln);padding:14px 0;margin:0}
+.fc{display:flex;flex-wrap:wrap;gap:40px;padding:20px 0}.fc div{min-width:150px}.fc b{color:var(--fg);display:block;margin-bottom:6px}.fc a{display:block;padding:2px 0}.fc a:hover{text-decoration:underline}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s}.rv.in{opacity:1;transform:none}
+@media(max-width:800px){.bento{grid-template-columns:1fr}.bento .wide{grid-column:auto}.tl div{grid-template-columns:1fr;gap:0}.tile{min-height:400px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+</style></head><body>
+<div class="gn"><b>V</b><div class="c"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#leadership">Leadership</a><a href="#skills">Skills</a><a href="#about">About</a></div><a href="#contact">Contact</a></div>
+<header class="hero">
+<p class="eb rv">Vishnu</p>
+<h1 class="rv">Building digital products.<br><span class="grad">AI. Software. People.</span></h1>
+<p class="sub rv">CSE (Data Science) student, developer and community builder at CMR Institute of Technology, Hyderabad.</p>
+<div class="rv"><a class="lk" href="#work">View my work</a><a class="lk" href="#contact">Get in touch</a></div>
+<div class="meta">Open to internships · Hackathons · Product-building opportunities</div>
+<div class="orb"></div>
+</header>
+<div class="w st rv"><div><b>3rd Year</b><span>CSE (Data Science)</span></div><div><b>Full Stack</b><span>React · Node · MongoDB</span></div><div><b>Leadership</b><span>NSS · Prompt Techies</span></div><div><b>Community</b><span>Campus programs</span></div></div>
+<section class="sec t2" id="work"><div class="w"><h2 class="rv">Selected work.</h2>
+<div class="bento">
+<div class="tile wide rv"><h3>LMS Platform</h3><p>A full-stack learning platform with student, instructor and admin roles, a course builder, timed quizzes and QR-verifiable certificates.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div><div><a class="lk lks" href="https://github.com/bollabathulavishnu-afk/Student-Forge-LMS" target="_blank" rel="noopener">GitHub</a><a class="lk lks" href="https://github.com/bollabathulavishnu-afk/Student-Forge-LMS/blob/main/ARCHITECTURE.md" target="_blank" rel="noopener">Architecture</a></div><div class="vis g1">LMS Platform</div></div>
+<div class="tile rv"><h3>DevLens</h3><p>Developer tools built to speed up everyday work.</p><div class="tags"><span>Developer Tools</span></div><a class="lk lks" href="https://github.com/bollabathulavishnu-afk/DevLens" target="_blank" rel="noopener">GitHub</a><div class="vis g4">DevLens</div></div>
+<div class="tile rv"><h3>Health ID</h3><p>A prototype exploring one digital ID for personal health records.</p><div class="tags"><span>JavaScript</span><span>Prototype</span></div><a class="lk lks" href="https://github.com/bollabathulavishnu-afk/Health-ID_prototype" target="_blank" rel="noopener">GitHub</a><div class="vis g3">Health ID</div></div>
+<div class="tile rv" style="min-height:300px"><h3>Bite Boost Bytes</h3><p>A TypeScript web project.</p><a class="lk lks" href="https://github.com/bollabathulavishnu-afk/bite-boost-bytes" target="_blank" rel="noopener">GitHub</a></div>
+<div class="tile rv" style="min-height:300px"><h3>Interactive Dragon</h3><p>A dragon that follows your cursor.</p><a class="lk lks" href="https://github.com/bollabathulavishnu-afk/interactive-dragon" target="_blank" rel="noopener">GitHub</a></div>
+</div></div></section>
+<section class="sec" id="experience"><div class="w"><h2 class="rv">Experience.</h2>
+<div class="tl rv">
+<div><small>2026</small><span><h3>Intern, Forge Digital Technologies</h3><p>Built a full-stack LMS platform (see Selected work): React + TypeScript frontend, Node.js/Express API, MongoDB models and the certificate engine.</p></span></div>
+<div><small>2026</small><span><h3>Python Intern, DecodeLabs</h3><p>Hands-on Python project work and practical tasks.</p></span></div>
+<div><small>Campus</small><span><h3>Campus Ambassador, Reskills</h3><p>Helped students discover skill-building opportunities.</p></span></div>
+<div><small>Campus</small><span><h3>Campus Ambassador, MyGov</h3><p>Promoted civic initiatives among students.</p></span></div>
+<div><small>Campus</small><span><h3>Student Partner, Internshala</h3><p>Connected students with internships and programs.</p></span></div>
+</div></div></section>
+<section class="sec" id="leadership"><div class="w"><h2 class="rv">Beyond code.</h2></div>
+<div class="hs">
+<div class="c k"><small>Leadership</small><div><h3>NSS</h3><p>Coordinating student activities and supporting community initiatives.</p></div></div>
+<div class="c"><small>Leadership</small><div><h3>Prompt Techies</h3><p>Tech club at CMRIT: engagement, workshops and hackathon activity.</p></div></div>
+<div class="c k"><small>Community</small><div><h3>Campus Community</h3><p>Building student communities around technology and practical learning.</p></div></div>
+<div class="c"><small>Achievement</small><div><h3>Project Viksit Bharat</h3><p>Top 50 Participant.</p></div></div>
+<div class="c k"><small>Hackathons</small><div><h3>Builder</h3><p>Participant in hackathons and tech events.</p></div></div>
+</div></section>
+<section class="sec" id="skills"><div class="w"><h2 class="rv">The toolkit.</h2>
+<div class="sk rv"><div><h4>Languages</h4><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span></div><div><h4>Web</h4><span>React</span><span>Node.js</span><span>HTML</span><span>CSS</span></div><div><h4>Data / AI</h4><span>SQL</span><span>AI APIs</span><span>Data Science</span></div><div><h4>Tools</h4><span>Git</span><span>GitHub</span><span>VS Code</span></div></div></div></section>
+<section class="sec" id="about"><div class="w" style="text-align:center"><h2 class="rv">A little about me.</h2>
+<p class="sub rv">I turn ideas into usable products, explore AI and full-stack development, and build communities around technology.</p>
+<p class="sub rv" style="color:var(--m)">CMR Institute of Technology · B.Tech CSE (Data Science) · 2024–2028 · Hyderabad</p></div></section>
+<section class="sec" id="contact"><div class="w"><div class="tile k rv" style="min-height:0;padding:90px 30px"><h2>Have an idea worth building?</h2><p style="font-size:24px">Let's make something useful.</p>
+<div><a class="lk" style="color:#2997ff" href="mailto:bollabathulavishnu@gmail.com">Email me</a><a class="lk" style="color:#2997ff" href="https://www.linkedin.com/in/bollabathula-vishnu-7b9b87325/" target="_blank" rel="noopener">LinkedIn</a><a class="lk" style="color:#2997ff" href="https://github.com/bollabathulavishnu-afk" target="_blank" rel="noopener">GitHub</a></div>
+<p style="font-size:15px;margin-top:28px">bollabathulavishnu@gmail.com · +91 93929 60016</p></div></div></section>
+<footer class="foot"><div class="w"><p>Built with care. Designed in the spirit of Apple's design principles: clarity, hierarchy and restraint.</p>
+<div class="fc"><div><b>Work</b><a href="https://github.com/bollabathulavishnu-afk/Student-Forge-LMS">LMS Platform</a><a href="https://github.com/bollabathulavishnu-afk/DevLens">DevLens</a><a href="https://github.com/bollabathulavishnu-afk/Health-ID_prototype">Health ID</a></div><div><b>Connect</b><a href="mailto:bollabathulavishnu@gmail.com">Email</a><a href="https://www.linkedin.com/in/bollabathula-vishnu-7b9b87325/">LinkedIn</a><a href="https://github.com/bollabathulavishnu-afk">GitHub</a></div><div><b>Phone</b><a href="tel:+919392960016">+91 93929 60016</a></div></div>
+<p style="border:0">© 2026 B. Vishnu. Developer · Builder · Community Leader.</p></div></footer>
+<script>
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+</script></body></html>
